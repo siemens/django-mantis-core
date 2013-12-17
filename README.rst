@@ -1,22 +1,18 @@
-=============================
-Mantis Core Django Application
-=============================
+==================
+Django Mantis Core
+==================
+
+A wrapper around the Django Dingos application used by the Mantis
+Cyber Threat Intelligence Management Framework. The rationale
+for this wrapper is to provide a location for 
+code specific to cyber threat intelligence management that
+is to be added to the underlying models. Such code should
+not be added to Dingos, because Dingos is a generic framework.
+
+Please refer to the
+documentation and developer guidelines of `Django Dingos`_ and `MANTIS`_.
+
+.. _Django Dingos: http://django-dingos.readthedocs.org.
+.. _MANTIS: http://django-mantis.readthedocs.org.
 
 
-A wrapper around the Django Dingos app for the Mantis Cyber Threat Intelligence Mgmt. Framework.
-
-Documentation
--------------
-
-The full documentation is at http://django-mantis-core.rtfd.org.
-
-Quickstart
-----------
-
-Install Mantis Core Django Application::
-
-    pip install django-mantis-core
-
-Then use it in a project::
-
-	import django-mantis-core

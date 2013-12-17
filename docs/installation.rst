@@ -2,11 +2,12 @@
 Installation
 ============
 
-At the command line::
+#. Follow the `Installation instructions for django-dingos`_
 
-    $ easy_install django-mantis-core
+#. Do::
 
-Or, if you have virtualenvwrapper installed::
+     $ pip install django-mantis-core
 
-    $ mkvirtualenv django-mantis-core
-    $ pip install django-mantis-core
+
+.. _Installation instructions for django-dingos: http://django-dingos.readthedocs.org/en/latest/installation.html
+

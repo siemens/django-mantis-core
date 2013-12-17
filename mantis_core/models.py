@@ -276,6 +276,21 @@ class Relation(dingos_models.Relation):
 mantis_class_map["Relation"] = Relation
 
 
+class BlobStorage(dingos_models.BlobStorage):
+
+    def __init__(self, *args, **kwargs):
+        kwargs['dingos_class_map'] = mantis_class_map
+        super(BlobStorage,self).__init__(*args,**kwargs)
+
+    objects = MantisManager()
+
+    class Meta:
+        proxy = True
+
+mantis_class_map["BlobStorage"] = BlobStorage
+
+
+
 class Marking2X(dingos_models.Marking2X):
 
     def __init__(self, *args, **kwargs):

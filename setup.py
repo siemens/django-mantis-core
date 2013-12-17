@@ -35,7 +35,7 @@ setup(
         'mantis_core',
     ],
     include_package_data=True,
-    install_requires=[
+    install_requires=['django-dingos>=0.0.9'
     ],
     license="GPLv2+",
     zip_safe=False,
