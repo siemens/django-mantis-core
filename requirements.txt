@@ -1,2 +1,2 @@
-django-dingos>=0.0.9
+django-dingos>=0.1.0
 # Additional requirements go here
