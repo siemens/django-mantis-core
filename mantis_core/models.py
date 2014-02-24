@@ -305,5 +305,45 @@ class Marking2X(dingos_models.Marking2X):
 mantis_class_map["Marking2X"] = Marking2X
 
 
+class FactTermNamespaceMap(dingos_models.FactTermNamespaceMap):
+
+    def __init__(self, *args, **kwargs):
+        kwargs['dingos_class_map'] = mantis_class_map
+        super(FactTermNamespaceMap,self).__init__(*args,**kwargs)
+
+    objects = MantisManager()
+
+    class Meta:
+        proxy = True
+
+mantis_class_map["FactTermNamespaceMap"] = FactTermNamespaceMap
+
+
+class PositionalNamespace(dingos_models.PositionalNamespace):
+
+    def __init__(self, *args, **kwargs):
+        kwargs['dingos_class_map'] = mantis_class_map
+        super(PositionalNamespace,self).__init__(*args,**kwargs)
+
+    objects = MantisManager()
+
+    class Meta:
+        proxy = True
+
+mantis_class_map["PositionalNamespace"] = PositionalNamespace
+
+
+class UserData(dingos_models.UserData):
+
+    def __init__(self, *args, **kwargs):
+        kwargs['dingos_class_map'] = mantis_class_map
+        super(UserData,self).__init__(*args,**kwargs)
+
+    objects = MantisManager()
+
+    class Meta:
+        proxy = True
+
+mantis_class_map["UserData"] = UserData
 
 

@@ -3,6 +3,11 @@
 History
 -------
 
+0.2.0 (2014-02-26)
+++++++++++++++++++
+
+Added corresponding abstract model classes for
+models introduced in DINGOS 0.2.0.
 
 0.1.0 (2013-12-19)
 ++++++++++++++++++
