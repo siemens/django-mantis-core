@@ -80,6 +80,20 @@ class IdentifierNameSpace(dingos_models.IdentifierNameSpace):
 mantis_class_map["IdentifierNameSpace"] = IdentifierNameSpace
 
 
+class IdentifierNameSpaceSubstitutionMap(dingos_models.IdentifierNameSpaceSubstitutionMap):
+
+    def __init__(self, *args, **kwargs):
+        kwargs['dingos_class_map'] = mantis_class_map
+        super(IdentifierNameSpaceSubstitutionMap,self).__init__(*args,**kwargs)
+
+    objects = MantisManager()
+
+    class Meta:
+        proxy = True
+
+mantis_class_map["IdentifierNameSpaceSubstitutionMap"] = IdentifierNameSpaceSubstitutionMap
+
+
 class DataTypeNameSpace(dingos_models.DataTypeNameSpace):
 
     def __init__(self, *args, **kwargs):
