@@ -3,6 +3,13 @@
 History
 -------
 
+0.3.0 
++++++
+
+* Bumped version and dependencies.
+
+* Added Django 1.7 migrations.
+
 0.2.0 (2014-02-26)
 ++++++++++++++++++
 
