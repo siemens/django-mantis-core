@@ -2,6 +2,13 @@
 Django Mantis Core
 ==================
 
+**WARNING: Mantis is not maintained anymore: by now, the excellent MISP platform
+(http://www.misp-project.org/)
+offers all the functionality (and much more) that had been required when
+MANTIS was created but could then not be found in any other tool.**
+
+
+
 A wrapper around the Django Dingos application used by the Mantis
 Cyber Threat Intelligence Management Framework. The rationale
 for this wrapper is to provide a location for 
